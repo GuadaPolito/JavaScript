@@ -1,0 +1,3 @@
+devolución clase 3
+
+Buenas, sisi perfecto. Lo unico quizas para optimizar es la ultima parte. ahi podes aplicar un for y no hacer lo mismo para cada let diferente! pero a estas alturas es totalmente normal hacerlo como lo hiciste! asique re tranqui

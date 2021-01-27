@@ -1,0 +1,3 @@
+devolucion clase 2
+
+buenas, genial. lo unico es que no se suele poner if atrás de if, sino que se utiliza el else if. esta sería la forma correcta y no tanto ifs seguidos!
