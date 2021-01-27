@@ -1,0 +1,68 @@
+
+/* MENÚ */ 
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+  
+    li {
+    padding: 5px;
+
+      a{
+      padding: 10px;
+      }
+  }
+}
+
+.menu {
+    background-color: #ff8080;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+        ul {
+    list-style: none;
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 0%;
+    padding-right: 3%;
+  
+  
+            li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  
+  
+                a:hover {
+    background-color: #cf4a4a;
+                         }
+                }
+         }
+}
+
+/* VARIABLES COLORES - Paleta Triglav */
+
+$verde-aquarela: #48e6ce;
+$coral: #dd6b6b;
+$coral-oscuro: #cf4a4a;
+$blanco: #ffffff;
+
+.telefono .email .h2 {
+    color: $verde-aquarela;
+}
+
+/* OPERACIONES */ 
+
+$ancho-card: 40rem;
+
+.card {
+  width: $ancho-card/2;
+}
+
+
+
+
+
+
