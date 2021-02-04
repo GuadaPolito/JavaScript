@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Búsqueda de paquetes de Viajes en Triglav Viajes y Turismo | Tu agencia de viajes de confianza</title>
+	<meta name="description" content="Triglav Viajes Argentina | Encuentra aquí tu paquete de viaje según tus preferencias."/>
+	<meta name="keywords" content="agencia de viajes, promociones de viajes, viajes last minute, paquetes, hoteles en argentina, cruceros, brasil, caribe, cuba, europa, japón, india"/>
+	<meta name="copyright" content="Triglav Viajes SRL" />
+	<script src="https://kit.fontawesome.com/53905e471d.js" crossorigin="anonymous"></script> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&family=Oswald&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">	 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/mediaqueries.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+	
+			<div class="logo">
+			<a href="index.html"><img src="imagenes/triglav-logo-2.png"
+			 alt="Logo Triglav Viajes y Turismo"	
+			 width="150" height="160"/></a>
+			</div>
+		
+			<div class="contactos">
+				<p class="telefono"><i class="fas fa-phone-alt"></i> (+54 11) 7100 3535 | L. a V. de 9 a 19 hs
+				</p>
+				<p class="email"><i class="far fa-envelope"></i> triglavturismo@gmail.com
+				</p>
+			</div>
+		
+			<div class="social">
+				<a href="https://api.whatsapp.com/send?phone=541122970080&text=Hola! me interesa saber más acerca de..." id="whatsapptop"><img src="imagenes/whatsapp.png" alt="whatsapp" width="30px" height="30px"></a>
+				<a href="https://www.facebook.com/Triglav-Viajes-y-Turismo-649082075608968" target="_blank" id="facebooktop"><img src="imagenes/facebook.png" alt="facebook" width="30px" height="30px"></a>
+				<a href="#" id="instagramtop"><img src="imagenes/instagram.png" alt="instagram" width="30px" height="30px"></a>
+				<a href="" id="twittertop"><img src="imagenes/twitter.png" alt="twitter" width="30px" height="30px"></a>
+			</div>
+			</div>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="lastminute.html">Last Minute</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	
+		<h1 class="titulos1">Encuentra aquí tu viaje ideal!</h1>
+			
+		<p class="infosimulador">Simulador de paquetes de viaje por Argentina</p>
+
+		<form>
+			<div class="form-group row">
+			  <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+			  <div class="col-xs-5">
+				<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+			  </div>
+			</div>
+			<div class="form-group row">
+			  <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
+			  <div class="col-xs-5">
+				<input type="Nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+			  </div>
+			</div>
+			<div class="form-group row">
+			  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Cantidad de días de viaje:</label>
+			  <select class="col-xs-5" id="dias">
+				<option selected>Elije...</option>
+				<option value="1">Entre 2 y 5 días</option>
+				<option value="2">Entre 6 y 8 días</option>
+				<option value="3">Entre 9 y 12 días</option>
+				<option value="4">Entre 13 y 16 días</option>
+				<option value="5">Entre 16 y 30 días</option>
+			  </select>
+			</div>
+			<div class="form-group row">
+				<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Presupuesto:</label>
+				<select class="col-xs-5" id="inlineFormPresupuesto">
+				  <option selected>Elije...</option>
+				  <option value="1">Entre $15000 y $30000</option>
+				  <option value="2">Entre $30000 y $60000</option>
+				  <option value="3">Entre $60000 y $80000</option>
+				  <option value="4">Entre $80000 y $140000</option>
+				  <option value="5">Más de $140000</option>
+				</select>
+			  </div>
+			<fieldset class="form-group">
+			  <div class="row">
+				<legend class="col-form-label col-sm-2 pt-0">Tipo de viaje preferido</legend>
+				<div class="col-sm-10">
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					<label class="form-check-label" for="gridRadios1">
+					  Aventura
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+					<label class="form-check-label" for="gridRadios2">
+					  Relax
+					</label>
+				  </div>
+				  <div class="form-check disabled">
+					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+					<label class="form-check-label" for="gridRadios3">
+					  Gastronómico
+					</label>
+				  </div>
+				</div>
+			  </div>
+			</fieldset>
+			<div class="form-group row">
+			  <div class="col-sm-2">Acepto condiciones</div>
+			  <div class="col-sm-10">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="gridCheck1">
+				  <label class="form-check-label" for="gridCheck1">
+					Sí
+				  </label>
+				</div>
+			  </div>
+			</div>
+			<div class="form-group row">
+			  <div class="col-sm-10">
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			  </div>
+			</div>
+		  </form>
+
+	</header>
+	<br>
+
+
+
+<section class="suscripcionnews">
+	
+			<p>Recibí primero nuestras ofertas y novedades! 
+			
+			<input class="input-mail" type="text" name="nombrecompleto" placeholder="ejemplo@mail.com">
+		  
+			<input id="botonnews" type="submit" value="ENVIAR">
+		  
+			</p>
+		  
+		  </form>
+</section>  
+
+<footer class="footer-grid">
+	
+			<div class="logo-footer">
+				<img src="imagenes/triglav-logo-2.png" alt="Triglav Viajes y Turismo"
+				width="60%" height="auto">
+			</div>
+		
+			<div class="footer1">
+				<ul>
+					<p class="titulosFooter"></p>
+					<li>EVT Leg. Nro 17685</li>
+					<li>Ituzaingó 1614, Lanús Este.</li>
+					<li>Buenos Aires - Argentina.</li>
+					<li>+54 11 7521-8918</li>
+					<li>triglavturismo@gmail.com</li>
+					<br>
+				</ul>
+			</div>
+		
+			<div class="social-foot">
+				<a href="#" id="whatsapptop"><img src="imagenes/whatsapp.png" alt="whatsapp" width="30px" height="30px"></a>
+				<a href="https://www.facebook.com/Triglav-Viajes-y-Turismo-649082075608968" target="_blank" id="facebooktop"><img src="imagenes/facebook.png" alt="facebook" width="30px" height="30px"></a>
+				<a href="#" id="instagramtop"><img src="imagenes/instagram.png" alt="instagram" width="30px" height="30px"></a>
+				<a href="" id="twittertop"><img src="imagenes/twitter.png" alt="twitter" width="30px" height="30px"></a>
+			</div>
+		
+			<div class="legales">
+				<p>NOTAS SOBRE LAS TARIFAS: SON POR PERSONA EN BASE MENCIONADA. CONSULTAR VIGENCIA (POR STOCK LIMITADO). LOS PROGRAMAS AL EXTERIOR NO INCLUYEN PERCEPCIÓN AFIP (5%) APLICABLE SOBRE PAGOS Y DEPÓSITOS EFECTUADOS EN EFECTIVO.
+					LA TARIFA INCLUYE IVA/DNT/IMP, GASTOS DE RESERVA, GASTOS ADMINISTRATIVOS. IMPUESTOS AÉREOS SUJETOS A VARIACIÓN. TARIFAS Y TASAS SUJETAS A VARIACIONES AL MOMENTO DE LA EMISIÓN. FOTOS MERAMENTE ILUSTRATIVAS.
+					TRIGLAV VIAJES Y TURISMO © 2019</p>
+			</div>
+		
+</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>		
+	<script src="script.js"></script>
+</body>
+</html>
+
+<!--texto comentado-->

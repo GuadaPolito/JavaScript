@@ -1,0 +1,89 @@
+/* MEDIAS QUERIES */
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .menu {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size to 30px */
+  @media screen and (max-width: 600px) {
+    .animate__animated {
+      display: none;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, change sizes of header's element */
+  @media screen and (max-width: 600px) {
+    .logo {
+      width: 20%;
+      height: 20%;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, change sizes of menu a */
+  @media screen and (max-width: 600px) {
+    .menu a {
+      font-size: 15px;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, change sizes of social icons */
+  /* @media screen and (max-width: 600px) {
+    #whatsapptop {
+      width: 50%;
+      height: 50%;
+    }
+  } */
+  
+  /* If screen size is 600px wide, or less, change sizes of social icons */
+  @media screen and (max-width: 600px) {
+    .contactos {
+      display: none;
+  
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, change sizes suscripcion news */
+  @media screen and (min-width: 360px) and (max-width: 600px) {
+  .suscripcionnews {
+    font-weight: bold;
+    font-size: 15px;
+    color: #dd6b6b;
+    background: linear-gradient(aquamarine, #27a995);
+    padding-left: 40px;
+    display: flex;
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 600px) {
+    .input-mail {
+      padding-left: 30px;
+      }
+    }
+
+  @media screen and (min-width: 360px) and (max-width: 600px) {
+    .legales {
+      font-size: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
+        }
+      }
+
+  @media screen and (min-width: 360px) and (max-width: 600px) {
+      .footer1 {
+        font-size: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+          }
+        }
+
+  @media screen and (min-width: 360px) and (max-width: 600px) {
+        .social-foot {
+        margin-right: 0px;
+            }
+          }
+
