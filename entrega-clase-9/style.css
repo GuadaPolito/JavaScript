@@ -1,0 +1,78 @@
+/* ESTILO WEB GRAL */
+
+
+
+/* ESTILOS MENÚ 
+
+#menu-nav{
+    margin-top: 5%;
+    margin-left: 0;
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(138, 137, 137);
+}
+
+#menu-nav li{
+    display: inline;
+    font-size: 20px;
+    display: inline-flexbox;
+    
+
+}
+
+.lista-menu{
+    font-size: 16px;
+    color: white;
+    
+}
+
+.lista-menu a {
+    color:white;
+    text-decoration:none;
+    
+}
+
+    a:hover {
+    color:rgb(9, 209, 133);
+    background-color:rgb(252, 252, 252);
+}
+*/
+
+header{
+    margin-bottom: 170px;
+}
+
+#navbar-brand{
+    margin-right: 60px;
+}
+
+#navbar-brand:hover{
+    filter: grayscale(70%);
+}
+
+.navbar-nav{
+    font-size: 18px;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.navbar-nav li a:hover{
+    color:rgb(23, 75, 219);
+}
+
+#logo-brand{
+    width: 150px;
+    height: auto;
+}
+
+.contenedor-simulador{
+    margin-left: 30px;
+    margin-right: 200px;
+}
+
+form{
+    margin-bottom: 50px;
+}
+
