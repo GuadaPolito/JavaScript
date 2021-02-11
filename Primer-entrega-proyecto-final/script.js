@@ -33,7 +33,7 @@ function presupuestoviaje(mipresupuesto) {
 }
 
 let nombre = prompt ('Ingrese su nombre');
-    alert('Hola '+ nombre + ' bienvenido/a al simulador de paquetes de viajes de Triglav!')
+    console.log('Hola '+ nombre + ' bienvenido/a al simulador de paquetes de viajes de Triglav!')
 
 let dias = Number(prompt ('¿Qué duración te gustaría que tenga tu viaje? (en días)'))
     

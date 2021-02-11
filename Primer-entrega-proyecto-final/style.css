@@ -41,19 +41,6 @@ html {
   letter-spacing: 10%;
 }
 
-/* BANNER CENTRAL */
-
-.animate__animated {
-  position: absolute;
-  display: flex;
-  top: 270px;
-  left: 590px;
-  font-family: Pacifico;
-  text-shadow: rgb(15, 15, 15);
-  font-size: 60px;
-  color: whitesmoke;
-}
-
 
 /* MENÚ */
 
@@ -97,15 +84,6 @@ a {
   }
 
 /* TÍTULOS */
-
-/* h2 {
-  font-size: 20px;
-  color: #27a995;
-  font-family: pacifico;
-  margin-left: 60px;
-  padding-top: 40px;
-  padding-left: 30px;
-} */
 
 .titulos1 {
   font-family: pacifico;
@@ -183,6 +161,22 @@ a {
 	padding-left: 30px;
 }
 
+h2 {
+  font-size: 14px;
+  margin-left: 60px;
+  padding-top: 40px;
+  padding-left: 30px;
+  color: #272928
+}
+
+h5 {
+  font-size: 14px;
+  margin-left: 100px;
+  padding-top: 40px;
+  padding-left: 30px;
+  color: #272928
+}
+
 /* CARDS BOOTSTRAP */
 
 .card {
@@ -197,35 +191,6 @@ a {
   border-color: #dd6b6b;
 }
 
-/* SOBRE NOSOTROS */
-
-.info {
-  margin-left: 50px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.titulo-nosotros {
-  font-size: 24px;
-  color: #27a995;
-  font-family: pacifico;
-  margin-left: 60px;
-  padding-top: 30px;
-  padding-left: 30px;
-}
-
-
-.carousel {
-  align-content: center;
-  margin-bottom: 30px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-.carousel-inner {
-  height: 100%; 
-  width: auto;
-}
 
 /* SECTION INDEX */
 
