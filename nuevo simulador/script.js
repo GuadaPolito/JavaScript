@@ -3,15 +3,49 @@ let nombre = prompt ('Ingrese su nombre');
 document.write('Hola '+ nombre + ' bienvenido/a al simulador de Viajes de Buceo!')
 */
 
-window.onload = function () {
-    
+$(document).ready(function(){
 
     //ASIGNACION DE FUNCION EN EL EVENTO ONBLUR (PERDER FOCO) AL INPUT DE NOMBRE
-    document.getElementById("nombreApellido").onblur = validarNombreApellido;
-    document.getElementById("inlineFormCustomSelectPrefDias").onblur = validarComboDias;
+    //document.getElementById("nombreApellido").onblur = validarNombreApellido;
+    //document.getElementById("inlineFormCustomSelectPrefDias").onchange = validarComboDias;
+    $('#nombreApellido').blur( function () { 
+        validarNombreApellido();
+    });
+
+    $('#inlineFormCustomSelectPrefDias').blur(function() {
+        validarComboDias($(this).val());
+    });
+
+    $("#InputEmail").keyup(function(){
+        if(validateEmail()){
+            // si el email es válido
+            // borde verde
+            $("#InputEmail").css("border","2px solid green");
+            // etiqueta
+            $("#emailMsg").html("<p class='text-success'>Válido</p>");
+        }else{
+            // si el email no es válido
+            // borde rojo
+            $("#InputEmail").css("border","2px solid red");
+            $("#emailMsg").html("<p class='text-danger'>Inválido</p>");
+        }
+        
+    });
+
+});
+
+function validateEmail(){
+    // get value of input email
+    var email=$("#InputEmail").val();
+    // expresiones regulares
+     var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+     if(reg.test(email)){
+         return true;
+     }else{
+         return false;
+     }
 
 }
-
 
 function validarNombreApellido() {
     var valor = document.getElementById("nombreApellido").value;
@@ -20,20 +54,19 @@ function validarNombreApellido() {
     }
 }
 
-function validarCombos(e) {
-    console.log(e.target);
-    var indice = document.getElementById(e.target.id).selectedIndex;
+function validarCombos(indice) {
+    console.log(e);
     if( indice == null || indice == 0 ) {
-        alert('no se ha seleccionado ninguna opcion');
+        alert('no se ha seleccionado ninguna opción');
     }
 
 }
 
 
-function validarComboDias(e) {
-    var indice = document.getElementById(e.target.id).selectedIndex;
+
+function validarComboDias(indice) {
     if( indice == null || indice == 0 ) {
-        alert('no se ha seleccionado ninguna opcion');
+        alert('no se ha seleccionado ninguna opción');
     }else{
         console.log(indice);
         var cantidad=document.getElementById("inlineFormCustomSelectPrefCantidad");
@@ -83,4 +116,6 @@ function validar_email( email ) {
     var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email) ? true : false;
 }
+
+//EVENTOS
 
