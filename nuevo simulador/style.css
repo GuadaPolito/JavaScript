@@ -1,5 +1,22 @@
 /* ESTILO WEB GRAL */
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+    background-image: linear-gradient(269deg, #b6eaff 0, #8fd7f8 16.67%, #61c3f1 33.33%, #00aee9 50%, #0099e2 66.67%, #0085db 83.33%, #0072d4 100%);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
 
 
 /* ESTILOS MENÚ 
@@ -76,3 +93,23 @@ form{
     margin-bottom: 50px;
 }
 
+/*Botón Submit */
+
+/* Botón propio
+-------------------------------------------------- */
+
+/* Redefine los estilos de .btn */
+/* Modificar el texto y el color de fondo en los tres estados
+   principales del botón: default, hover y active. */
+   .btn-ttc,
+   .btn-ttc:hover,
+   .btn-ttc:active {
+     color: white;
+     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+     background-color:rgb(245, 112, 194);
+   }
+
+   .btn-ttc:hover {
+     background-position: 0 -15px;
+     background-color: #fab55b;
+   }
