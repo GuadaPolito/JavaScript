@@ -1,8 +1,3 @@
-/*
-let nombre = prompt ('Ingrese su nombre');
-document.write('Hola '+ nombre + ' bienvenido/a al simulador de Viajes de Buceo!')
-*/
-
 $(document).ready(function(){
 
     //ASIGNACION DE FUNCION EN EL EVENTO ONBLUR (PERDER FOCO) AL INPUT DE NOMBRE
@@ -117,5 +112,5 @@ function validar_email( email ) {
     return regex.test(email) ? true : false;
 }
 
-//EVENTOS
+
 
