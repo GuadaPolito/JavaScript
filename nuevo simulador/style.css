@@ -95,12 +95,6 @@ form{
 
 /*Botón Submit */
 
-/* Botón propio
--------------------------------------------------- */
-
-/* Redefine los estilos de .btn */
-/* Modificar el texto y el color de fondo en los tres estados
-   principales del botón: default, hover y active. */
    .btn-ttc,
    .btn-ttc:hover,
    .btn-ttc:active {
@@ -113,3 +107,19 @@ form{
      background-position: 0 -15px;
      background-color: #fab55b;
    }
+
+
+/* VIDEO TEST */
+
+   .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
