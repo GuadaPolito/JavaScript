@@ -54,6 +54,16 @@ canvas {
     padding-bottom: 20px;
 }
 
+/*MAPA*/
+
+#map { 
+    width: 100%;
+    height: 580px;
+    box-shadow: 5px 5px 5px #888;
+ }
+
+
+
 /* ESTILOS MENÚ 
 
 #menu-nav{

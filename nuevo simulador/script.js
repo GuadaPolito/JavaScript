@@ -81,9 +81,6 @@ function cambioDuracionViaje(X){
     }
   }
 
-//VALIDAR CHECKBOX
-
-
 //VALIDAR ENVIO DE FORMULARIO
 function enviar(){
     alert("Se ha enviado el registro");

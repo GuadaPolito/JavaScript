@@ -13,6 +13,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- mapa leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -60,80 +62,6 @@
     
     <h1 id="titulo2">Tu viaje de buceo en Argentina</h1>
     <h4 id="bajada-form">Completa tu formulario para recibir toda la información</h4>
-
-    <!-- SECTION FORM 1-->
-
-    <!--<form class="form-group">
-
-
-      <label class="my-1 mr-2" for="InputEmail">Direccion de Email</label>
-      <input type="email" class="custom-select my-1 mr-sm-2" id="InputEmail" aria-describedby="emailHelp"
-        placeholder="Por favor ingrese email"><span id="emailMsg"></span> 
-
-        <label class="my-1 mr-2" for="nombreApellido">Nombre y Apellido</label>
-        <input type="text" class="custom-select my-1 mr-sm-2" id="nombreApellido" placeholder="Por favor ingrese su nombre">
-
-
-      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Duración del viaje</label>
-      <select class="select custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefDias">
-        <option selected>Elige...</option>
-        <option value="1">1 día</option>
-        <option value="2">2 a 3 días</option>
-        <option value="3">4 a 7 días</option>
-      </select>
-
-      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Cantidad de buceos que desea realizar</label>
-      <select class="select custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefCantidad">
-        <option selected>Elige...</option>
-        <option value="1">2</option>
-        <option value="2">4</option>
-        <option value="3">6</option>
-        <option value="4">8</option>
-      </select>
-
-      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Nivel de Experiencia</label>
-      <select class="select custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefExp">
-        <option selected>Elige...</option>
-        <option value="1">Principiante</option>
-        <option value="2">Intermedio</option>
-        <option value="3">Avanzado</option>
-      </select>
-
-      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preferencias de clima</label>
-      <select class="select custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefClima">
-        <option selected>Elige...</option>
-        <option value="1">Buceo en aguas templadas</option>
-        <option value="2">Buceo en aguas frías</option>
-      </select>
-
-      <label class="my-1 mr-2" for="sel2">Tipo de buceo (puede seleccionar más de una opción con shift)</label>
-      <select multiple class="custom-select my-1 mr-sm-2" id="interesesbuceo" name="interesesbuceo">
-        <option value="int-practica">Práctica /Entrenamiento</option>
-        <option value="int-mar">Buceo en mar abierto</option>
-        <option value="int-lagos">Buceo en lagos</option>
-        <option value="int-esteros">Buceo en esteros</option>
-        <option value="int-naufragios">Naufragios</option>
-        <option value="int-fauna">Fauna Marina</option>
-        <option value="int-altura">Buceo en altura</option>
-        <option value="int-nocturno">Buceo nocturno</option>
-        <option value="int-cavernas">Buceo en cavernas</option>
-      </select>
-
-
-      <div class="custom-control custom-checkbox my-1 mr-sm-2">
-        <input type="checkbox" class="custom-control-input" id="customControlPrivacidad">
-        <label class="custom-control-label" for="customControlInline">Acepto la política de privacidad</label>
-      </div>
-
-      <div class="custom-control custom-checkbox my-1 mr-sm-2">
-        <input type="checkbox" class="control-input" id="ControlPrivacidad">
-        <label class="control-label" for="ControlInline">Acepto la política de privacidad</label>
-      </div>
-
-      <button type="submit" id="boton" class="btn btn-primary my-1">Ver Resultados</button>
-      <button type="submit" id="boton" class="btn btn-ttc">Ver Resultados</button>
-      
-    </form> -->
 
     <form>
       <div class="form-group row">
@@ -293,7 +221,11 @@
     </form>
 
   </section>
-  
+
+  <div id = 'map'>
+  </div>  
+
+  <footer></footer>
 
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -303,9 +235,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
   <script src="script.js" type="text/javascript"></script>
-  
+  <script src="map.js" type="text/javascript"></script>
+
 </body>
 
 </html>
