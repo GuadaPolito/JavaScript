@@ -17,7 +17,42 @@ canvas {
   z-index: 10;
 }
 
+/* TEXTO HOME BIENVENIDA */
 
+.contenedor{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+
+.bienvenida{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: cornsilk;
+    text-shadow: rgb(43, 42, 42);
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+/* TÍTULO FORMULARIO*/
+
+#titulo2{
+    font-family: 'Pacifico', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#bajada-form{
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
 
 /* ESTILOS MENÚ 
 
@@ -56,7 +91,7 @@ canvas {
 */
 
 header{
-    margin-bottom: 170px;
+    margin-bottom: 110px;
 }
 
 #navbar-brand{
@@ -79,8 +114,12 @@ header{
     color:rgb(23, 75, 219);
 }
 
+.navbar-text{
+    margin-right: 15px;
+}
+
 #logo-brand{
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -89,21 +128,21 @@ header{
     margin-right: 200px;
 }
 
-form{
-    margin-bottom: 50px;
+.custom-control-input{
+    color: coral;
 }
 
 /*Botón Submit */
 
-   .btn-ttc,
-   .btn-ttc:hover,
-   .btn-ttc:active {
+   .btn-primary,
+   .btn-primary:hover,
+   .btn-primary:active {
      color: white;
      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
      background-color:rgb(245, 112, 194);
    }
 
-   .btn-ttc:hover {
+   .btn-primary:hover {
      background-position: 0 -15px;
      background-color: #fab55b;
    }
@@ -123,3 +162,28 @@ form{
     width: 100%;
     height: 100%;
 }
+
+/* test burbujas */
+    
+    /* Essential CSS - Makes the effect work */
+    
+    .bienvenida {
+    display: inline-block;
+    position: absolute;
+    }
+    
+    .bienvenida {
+    position: absolute;
+    margin: 1em 0 0;
+    font-family: 'Pacifico', cursive;
+    color: rgb(236, 231, 231);
+    z-index: 2;
+    }
+    
+    .individual-bubble {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 10px;
+    background-color: rgb(211, 233, 241);
+    z-index: 1;
+    }
