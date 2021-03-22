@@ -82,9 +82,9 @@ function cambioDuracionViaje(X){
   }
 
 //VALIDAR ENVIO DE FORMULARIO
-function enviar(){
-    alert("Se ha enviado el registro");
-}
+//function enviar(){
+//    alert("Se ha enviado el registro");
+//}
 
 // VALIDAR EMAIL
 function validar_email( email ) {
@@ -92,5 +92,14 @@ function validar_email( email ) {
     return regex.test(email) ? true : false;
 }
 
+//MODAL
+function enviar(){
+   $('#modal').modal('show');
+ };
 
+
+//LOCAL STORAGE
+
+localStorage.setItem("email",$("#email").text());
+localStorage.setItem("nombre",$("#nombreApellido").text());
 

@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <!-- mapa leaflet-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -219,13 +221,83 @@
         </div>
       </div>
     </form>
+  
+    <div class="modal" tabindex="-1" id="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Gracias! pronto recibirás un email con toda la información</p>
+          </div>
+          <div class="modal-footer"></div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
   <div id = 'map'>
   </div>  
 
-  <footer></footer>
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text" style="text-align: left">Contactanos</h5>
+
+        <p style="text-align: left">
+          Buceanica es una escuela de buceo que te ofrece cursos en todos los niveles y viajes con todo lo que necesitas para una experiencia inolvidable!</p>
+        <p class="itemsFooter"><i class="fas fa-envelope"></i> info@buceanica.com.ar</p>
+        <p class="itemsFooter"><i class="fab fa-whatsapp"></i></i> +54 11 5333-7889</p>
+        <p class="itemsFooter"><i class="fas fa-map-marker-alt"></i> Bs As, Argentina</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text" style="text-align: left">Links</h5>
+
+        <ul class="list-unstyled" style="text-align: left">
+          <li>
+            <a href="#" class="text-dark">Nosotros</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark">Cursos</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark">Viajes de Buceo en Argentina</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark">Viajes de Buceo por el mundo</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(74, 225, 252, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="#">Buceanica</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
